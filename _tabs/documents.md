@@ -4,7 +4,7 @@ icon: fas fa-file-alt
 order: 1
 ---
 
-공부 중에 LaTeX과 워드로 직접 작성한 문서들입니다. (last updated on 26.04.29.)
+공부 중에 LaTeX과 워드로 직접 작성한 문서들입니다. (last updated on 26.05.07.)
 
 ## 🚀 Personal Study
 
