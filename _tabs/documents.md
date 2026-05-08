@@ -4,13 +4,13 @@ icon: fas fa-file-alt
 order: 1
 ---
 
-공부 중에 LaTeX과 워드로 직접 작성한 문서들입니다. (last updated on 26.05.07.)
+공부 중에 LaTeX과 워드로 직접 작성한 문서들입니다. (last updated on 26.05.08.)
 
 ## 🚀 Personal Study
 
 ### ML & Math
 
-- [**Mathematics for Machine Learning**](/pdf/personal/ML_Math/Mathematics_for_Machine_Learning.pdf) <span style="font-size:0.9em;color:gray;">(129 pages)</span><br>
+- [**Mathematics for Machine Learning**](/pdf/personal/ML_Math/Mathematics_for_Machine_Learning.pdf) <span style="font-size:0.9em;color:gray;">(128 pages)</span><br>
 '[Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf)' 교재를 기반으로 정리한 linear algebra, vector calculus, probability and distribution, continuous optimization, several machine learning problems (linear regression, PCA, gaussian mixture, binary classification) 관련 내용
 
 - [**TinyML and Efficient Deep Learning Computing**](/pdf/personal/ML_Math/TinyML_and_Efficient_Deep_Learning_Computing_Song_Han_.pdf) <span style="font-size:0.9em;color:gray;">(106 pages)</span><br>
