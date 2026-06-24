@@ -150,7 +150,7 @@ pwa:
 # paginate: 10  # Disabled - not using pagination anymore
 
 # The base URL of your site
-baseurl: ""
+baseurl: "/blog"
 
 # ------------ The following options are not recommended to be modified ------------------
 
