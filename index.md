@@ -4,7 +4,7 @@ title: Home
 icon: fas fa-home
 ---
 
-![](/assets/img/me.png){: .normal width="170" }
+![]({{ site.baseurl }}/assets/img/me.png){: .normal width="170" }
 
 안녕하세요, 저는 숭실대학교 소프트웨어학부에 재학 중인 **이준혁**(Junhyeok Lee)입니다. 저는 
 Efficient ML, Efficient Inference, Model Compression, Efficient LLM/VLM, Efficient model serving, 컴퓨터 구조, 선형대수학 등에 관심이 있고, 현재 포항공과대학교 [**EffL**](https://effl.postech.ac.kr/)에 인턴으로 소속되어 있습니다.
