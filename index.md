@@ -13,4 +13,4 @@ Efficient ML, Efficient Inference, Model Compression, Efficient LLM/VLM, Efficie
 
 저는 뭔가를 배울 때 직접 정리하고 기록하는 것을 좋아합니다. 이 블로그에서는 지금까지 제가 공부하고 작업해 온 것들을 확인하실 수 있습니다. Documents 탭에는 LaTeX으로 직접 작성한 문서들을, Posts 탭에는 제가 진행한 paper review, reproducing, project 등에 대한 내용을 정리해뒀습니다.
 
-추가로, 제 CV는 [**링크**](/pdf/Junhyeok_Lee_CV.pdf)에 있습니다.
+추가로, 제 CV는 [**링크**]({{ "/pdf/Junhyeok_Lee_CV.pdf" | relative_url }})에 있습니다.

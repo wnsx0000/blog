@@ -48,9 +48,15 @@ bundle update
 - **Optional front matter**: `math: true` (for LaTeX), `pin: true` (to pin post)
 
 ### Pages and Tabs
-- **Navigation tabs**: `_tabs/` - Pages that appear in the site navigation
-- **Hidden tabs**: `_tabs_hidden/` - Tab pages not shown in navigation but accessible via URL
+- **Navigation tabs**: `_tabs/` - Pages that appear in the site navigation. Currently only `posts.md` (Posts) and `documents.md` (Documents)
+- **Hidden tabs**: `_tabs_hidden/` - Tab pages not shown in navigation but accessible via URL (`about.md`, `archives.md`, `tags.md`)
 - **Tab front matter** requires: `layout: page`, `icon`, `order`
+- **Custom Home page**: `index.md` (root) overrides the default Chirpy home with a personal intro page (`layout: page`, `title: Home`)
+- **`hidden.md`** (root) is a standalone page listing hidden/archived PDF documents, separate from the `documents` tab
+
+### Custom Layout and Plugins
+- **`_layouts/home-with-categories.html`**: Custom layout used by the Posts tab. Renders the post list grouped/filtered, and **excludes posts with `hidden: true`** from the listing (in addition to the standard `pin` handling). Use `hidden: true` in a post's front matter to keep it published-but-unlisted.
+- **`_plugins/posts-lastmod-hook.rb`**: Sets `last_modified_at` on posts from git history (any post with more than one commit shows a last-modified date).
 
 ### Static Assets
 - **Images**: `assets/img/posts/YYYY-MM-DD-title/` - Organized by post date and title
@@ -65,13 +71,14 @@ bundle update
 ### Site Settings (_config.yml)
 - **Language**: Korean (`lang: ko`)
 - **Timezone**: Asia/Seoul
-- **Theme mode**: Light mode by default
+- **Theme mode**: Light mode by default (`theme_mode: light`)
 - **Comments**: Uses Giscus (repo: wnsx0000/wnsx0000.github.io)
-- **Pagination**: 10 posts per page
-- **Collections**: `_tabs` with output enabled
+- **`baseurl: "/blog"`**: The site is served from the `/blog` subpath, NOT the domain root. The published URL is `https://wnsx0000.github.io/blog/`. This is critical: recent commit history shows repeated bugfixes around path handling. When linking assets/pages, prefer site-relative includes that respect `baseurl`; hardcoded absolute paths like `/assets/...` or `/pdf/...` only resolve because Jekyll prepends `baseurl` at build time — verify links work under `/blog/` when testing.
+- **Pagination**: Disabled (`paginate` is commented out; the site no longer paginates the post list)
+- **Collections**: `_tabs` with output enabled, sorted by `order`
 
 ### Important Configuration Notes
-- Avoid modifying options below line 155 in `_config.yml` unless necessary
+- Avoid modifying options below the `baseurl` line (~line 155) in `_config.yml` unless necessary
 - Permalink structure is `/posts/:title/` - do not change without updating all post links
 - Posts default to `layout: post` with comments and TOC enabled
 
